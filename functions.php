@@ -16,6 +16,7 @@ add_action( 'wp_enqueue_scripts', 'bootslate_load_scripts' );
 function bootslate_load_scripts()
 {
 wp_enqueue_script( 'jquery' );
+wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/javascripts/bootstrap.min.js', array(), null, true );
 }
 add_action( 'comment_form_before', 'bootslate_enqueue_comment_reply_script' );
 function bootslate_enqueue_comment_reply_script()
