@@ -8,3 +8,16 @@ img {
 iframe {
   max-width: 100%;
 }
+
+// SEARCHFORM - WORDPRESS CORE
+// --------------------------------------------------
+#s {
+  float: left;
+  max-width: 100%;
+}
+
+#searchsubmit {
+  background-color: transparent;
+  border: 1px solid $black;
+  padding: 2px;
+}

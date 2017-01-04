@@ -5842,3 +5842,12 @@ img {
 
 iframe {
   max-width: 100%; }
+
+#s {
+  float: left;
+  max-width: 100%; }
+
+#searchsubmit {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 2px; }
