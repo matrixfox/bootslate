@@ -14,6 +14,9 @@ Text Domain: bootslate
 BootSlate WordPress Theme © 2017 Matrixfox
 BootSlate is distributed under the terms of the GNU GPL
 */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
 @import 'variable';
 
