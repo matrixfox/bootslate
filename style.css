@@ -5835,3 +5835,10 @@ button.close {
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important; }
+
+img {
+  height: 100%;
+  max-width: 100%; }
+
+iframe {
+  max-width: 100%; }
