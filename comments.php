@@ -1,10 +1,10 @@
 <?php if ( 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) return; ?>
 <section id="comments">
-<?php 
-if ( have_comments() ) : 
+<?php
+if ( have_comments() ) :
 global $comments_by_type;
 $comments_by_type = &separate_comments( $comments );
-if ( ! empty( $comments_by_type['comment'] ) ) : 
+if ( ! empty( $comments_by_type['comment'] ) ) :
 ?>
 <section id="comments-list" class="comments">
 <h3 class="comments-title"><?php comments_number(); ?></h3>
@@ -22,19 +22,19 @@ if ( ! empty( $comments_by_type['comment'] ) ) :
 </nav>
 <?php endif; ?>
 </section>
-<?php 
-endif; 
-if ( ! empty( $comments_by_type['pings'] ) ) : 
-$ping_count = count( $comments_by_type['pings'] ); 
+<?php
+endif;
+if ( ! empty( $comments_by_type['pings'] ) ) :
+$ping_count = count( $comments_by_type['pings'] );
 ?>
 <section id="trackbacks-list" class="comments">
-<h3 class="comments-title"><?php echo '<span class="ping-count">' . $ping_count . '</span> ' . ( $ping_count > 1 ? __( 'Trackbacks', 'blankslate' ) : __( 'Trackback', 'blankslate' ) ); ?></h3>
+<h3 class="comments-title"><?php echo '<span class="ping-count">' . $ping_count . '</span> ' . ( $ping_count > 1 ? __( 'Trackbacks', 'bootslate' ) : __( 'Trackback', 'bootslate' ) ); ?></h3>
 <ul>
-<?php wp_list_comments( 'type=pings&callback=blankslate_custom_pings' ); ?>
+<?php wp_list_comments( 'type=pings&callback=bootslate_custom_pings' ); ?>
 </ul>
 </section>
-<?php 
-endif; 
+<?php
+endif;
 endif;
 if ( comments_open() ) comment_form();
 ?>
